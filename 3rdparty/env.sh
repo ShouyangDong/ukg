@@ -1,2 +1,0 @@
-export TVM_HOME=$PWD
-export PYTHONPATH=$TVM_HOME/python:${PYTHONPATH}
