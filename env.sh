@@ -1,5 +1,6 @@
-UKG_HOME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && $pwd)"
+UKG_HOME=$PWD
 TVM_PATH="${UKG_HOME}/3rdparty/tvm"
 
-export PYTHONPATH=$UKG_HOME/python:$TVM_PATH/python:${PYTHONPATH}
+export PYTHONPATH=$UKG_HOME/python:$TVM_PATH:$TVM_PATH/python:$TVM_PATH/python/tvm:${PYTHONPATH}
 export TVM_LOG_DEBUG=1
+TVM_BACKTRACE=1
